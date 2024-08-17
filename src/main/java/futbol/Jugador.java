@@ -19,7 +19,7 @@ public class Jugador extends Futbolista{
 	@Override
 	public String toString() {
 		return "El futbolista " + getNombre()+  " tiene " +String.valueOf(getEdad())+ ", y juega de "+getPosicion()+
-				" con el dorsal " + String.valueOf(dorsal);
+				" con el dorsal " + String.valueOf(dorsal)+". Ha marcado " + golesMarcados;
 
 	}
 	
