@@ -22,4 +22,24 @@ public class Portero extends Futbolista{
 				", y juega de " + getPosicion() + " con el dorsal " + dorsal+
 				". Le han marcado " + golesRecibidos;
 	}
+
+	@Override
+	public int compareTo(Futbolista o) {
+		int ed1= 0;
+		int ed2 = 0;
+		Portero a = (Portero)o;
+		if (golesRecibidos < 0) {
+			ed1 = -golesRecibidos;
+		} else {
+			ed1 = golesRecibidos;
+		}
+		
+		if (a.golesRecibidos < 0) {
+			ed2 = -a.golesRecibidos;
+		} else {
+			ed2 = a.golesRecibidos;
+		}
+		
+		return ed1 + ed2;
+	}
 }
