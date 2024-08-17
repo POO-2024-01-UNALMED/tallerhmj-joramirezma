@@ -46,9 +46,10 @@ public class Jugador extends Futbolista{
 	}
 
 	@Override
-	public int compareTo(Futbolista o) {
+	public int compareTo(Object a) {
 		int ed1= 0;
 		int ed2 = 0;
+		Jugador o = (Jugador)a;
 		if (getEdad() < 0) {
 			ed1 = -getEdad();
 		} else {
