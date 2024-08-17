@@ -17,6 +17,13 @@ public class Jugador extends Futbolista{
 	}
 
 	@Override
+	public String toString() {
+		return "El futbolista " + getNombre()+  " tiene " +getEdad()+ ", y juega de "+getPosicion()+
+				" con el dorsal " + dorsal;
+
+	}
+	
+	@Override
 	public boolean jugarConLasManos() {
 		// TODO Auto-generated method stub
 		return false;
